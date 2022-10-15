@@ -11,7 +11,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-const routes: Routes = []
+const routes: Routes = [
+  { path: '', component: DashboardComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'signup', component: SignupComponent },
+]
 
 @NgModule({
   declarations: [
